@@ -1,0 +1,162 @@
+body{
+    background: rgb(28, 27, 27);
+    color: white;
+}
+.line_left{
+    display: flex;
+    flex-direction: column;
+    background:  rgb(43, 47, 47);
+    gap: 5px;
+    height: 100vh;
+    width: 50px;
+    padding: 10px;
+    overflow: hidden;
+    font-weight:bold;
+    list-style:none ;
+    margin-left: 5px;
+    border-radius:5px ;
+}
+.line_left div:not(.photo_name):not(.log_out){
+    margin: 10px;
+    font-size: 20px;
+    display: flex;
+    gap:40px;
+    align-items: flex-start;
+    flex-wrap: nowrap; 
+    color: white;
+    text-decoration: none;
+}
+.photo_name{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.photo-user{
+    width: 40px; 
+    height: 40px;
+    border: 3px solid rgb(231, 238, 238);
+    border-radius: 50% ;
+
+}
+.username{
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-transform:uppercase;
+}
+.line_left:hover{
+    width: 320px;
+    transition: 0.8s;
+}
+.line_left a {
+    text-decoration: none;
+}
+.log_out{
+    display: flex;
+    background: rgb(159, 7, 7);
+    border: 10px solid rgb(162, 4, 4);
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(218, 214, 214);
+    gap: 30px;
+    height: 20px;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-self: flex-end;
+    margin-top: 70px;
+}
+/* .line_left a div:hover:not(.log_out){
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.5s;
+} */
+.line_left a div:hover:not(.log_out),.line2body div:hover,.taple_product tbody tr:hover{
+    text-shadow:aqua 5px 5px 5px; 
+    cursor: pointer;
+}
+.log_out:hover{
+    background: rgb(17, 12, 153);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    transition: 0.5s;
+    border: 10px solid rgb(17, 12, 153);
+}
+/* finish the line_left css */
+
+.website{
+    display: flex;
+    gap: 20px;
+}
+.body{
+   width: 100%;
+ 
+}
+.dashboard-body{
+    background: royalblue;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width: 560px) {
+    .line2body{
+        display:grid;
+        gap: 5px;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(min-width:561px) and  (max-width:700px) {
+    .line2body{
+        display:grid;
+        gap: 5px;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (min-width:701px) and (max-width:2000px) {
+.line2body{
+    display:grid;
+    gap: 5px;
+    grid-template-columns: repeat(4,1fr);
+}
+}
+.line2body div{
+    padding: 15px;
+    background: rgb(43, 47, 47);
+    height: 100px;
+    border-radius: 8px;
+    display: flex;
+    justify-content:space-between; 
+}
+.line2body div i{
+    font-size: 50px;
+    align-self: center;
+    
+}
+.line2body b{
+    align-self: center;
+}
+.line2body .paragraf{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.taple_product{
+    width: 100%;
+    border-radius: 5px;
+    border-spacing: 5px;
+}
+.taple_product thead tr th{
+    background: royalblue;
+    border-radius: 5px;
+}
+.taple_product tbody tr th{
+    background: rgb(43, 47, 47);
+    border-radius: 5px;
+}
